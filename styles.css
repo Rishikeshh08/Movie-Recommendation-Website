@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    width:100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective:10px;
+    color:white;
+    height:100vh;    
+}
+
+.container {
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width:100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background{
+    transform:translateZ(-17px) translateX(-15px) scale(3);
+    width:100%;
+}
+.foreground{
+    transform:translateZ(-10px) translateY(300px) scale(1.2);
+}
+.background, .foreground {
+    position:absolute;
+    height:100%;
+    z-index:-1;
+    object-fit: cover;
+}
+
+h1{
+    position:absolute;
+
+    color:rgba(255, 255, 255, 0.9);
+    font-size: 130px;
+    font-weight: 300;
+    font-family:fantasy;
+    text-shadow: 0 0 5px hsl(215, 100%, 50%);
+}
+
+
+section{
+    background-color:black;
+}
+.bg {
+    height:500px;
+    background-attachment: fixed;
+}
+
+.bg1{
+    background-image: url(yourname2.jpg);
+    background-position: 50% 100%;
+}
+.bg2{
+    background-image: url(silentvoice1.jpg);
+    background-position: 50% 79%;
+}
+.bg3 {
+    background-image: url(IWantToEatYourPancreas.jpg);
+    background-position:50% 92%;
+}
+
+.start {
+    height:100px;
+}
+.paraa {
+    height: 500px;
+    padding:50px 70px;
+    font-size: 20px;
+    line-height: 1.5;
+    
+}
+.para1 {
+    height:950px;
+} 
+
+#first {
+    font-size: 50px;
+    text-align: center;
+    padding: 80px 0 0;
+}
+.heading {
+    position:relative;
+    top:50px;
+    color:black;
+    display:inline;
+    background-color: white;
+    padding:0.6rem 2.6rem;
+    
+
+
+}
